@@ -50,7 +50,7 @@ const Dashboard = () => {
         </Card>
 
         {/* Quick Actions */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
           <Link to="/transfer" className="block">
             <Card className="p-6 hover:shadow-lg transition-all cursor-pointer border border-border/50 hover:border-secondary/50">
               <div className="bg-secondary/10 w-12 h-12 rounded-xl flex items-center justify-center mb-3">
@@ -66,15 +66,6 @@ const Dashboard = () => {
                 <CreditCard className="h-6 w-6 text-accent" />
               </div>
               <h3 className="font-semibold text-card-foreground">Pedir crédito</h3>
-            </Card>
-          </Link>
-
-          <Link to="/credits" className="block">
-            <Card className="p-6 hover:shadow-lg transition-all cursor-pointer border border-border/50 hover:border-primary/50">
-              <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mb-3">
-                <DollarSign className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="font-semibold text-card-foreground">Mis créditos</h3>
             </Card>
           </Link>
 

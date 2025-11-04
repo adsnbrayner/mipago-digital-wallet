@@ -19,9 +19,9 @@ const Credits = () => {
   const calculateQuickCredit = () => {
     const amount = parseFloat(quickAmount || "0");
     const rates = {
-      30: { tea: 95, cft: 108 },
-      60: { tea: 105, cft: 119 },
-      90: { tea: 115, cft: 130 },
+      30: { tea: 15, cft: 18 },
+      60: { tea: 16, cft: 19 },
+      90: { tea: 17, cft: 20 },
     };
     
     const rate = rates[quickTerm];
@@ -39,10 +39,10 @@ const Credits = () => {
   const calculateNormalCredit = () => {
     const amount = parseFloat(normalAmount || "0");
     const rates = {
-      3: { tea: 45, cft: 52 },
-      6: { tea: 50, cft: 58 },
-      9: { tea: 55, cft: 64 },
-      12: { tea: 60, cft: 70 },
+      3: { tea: 8, cft: 10 },
+      6: { tea: 10, cft: 13 },
+      9: { tea: 13, cft: 16 },
+      12: { tea: 16, cft: 19 },
     };
     
     const rate = rates[normalTerm];
@@ -329,8 +329,8 @@ const Credits = () => {
                 </tr>
                 <tr className="border-b border-border">
                   <td className="py-3 px-4 text-muted-foreground">TEA</td>
-                  <td className="text-center py-3 px-4 font-semibold text-foreground">95-115%</td>
-                  <td className="text-center py-3 px-4 font-semibold text-foreground">45-60%</td>
+                  <td className="text-center py-3 px-4 font-semibold text-foreground">15-17%</td>
+                  <td className="text-center py-3 px-4 font-semibold text-foreground">8-16%</td>
                 </tr>
                 <tr className="border-b border-border">
                   <td className="py-3 px-4 text-muted-foreground">Aprobación</td>
